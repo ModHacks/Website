@@ -1,0 +1,51 @@
+.column {
+    float: left;
+    margin: 0 1em;
+    width: 30vw;
+}
+
+#faq {
+    width: 80vw;
+    height: 75vw;
+}
+
+#splash {
+    width: 100vw;
+    height: 100vh;
+}
+
+#whoweare {
+    width: 40vw;
+    height: 85vh;
+
+}
+
+#socialmedia {
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    position: absolute;
+    right: 3em;
+    top: 6em;
+}
+
+#socialmedia li {
+    display: block;
+}
+
+.highlight {
+    color: #199e83;
+}
+
+#links li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#sponsor {
+    width: 45vw;
+    height: 100vh;
+}
