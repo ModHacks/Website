@@ -9,9 +9,21 @@
     height: 75vw;
 }
 
+#nav {
+    right: 0.45em;
+    top: 50%;
+    opacity: 0.5;
+    position: fixed;
+}
+
+#nav li {
+    display: block;
+}
+
 #splash {
     width: 100vw;
     height: 100vh;
+
 }
 
 #whoweare {

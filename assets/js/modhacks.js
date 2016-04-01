@@ -1,5 +1,5 @@
-var hashTagActive = "";
-$(".scroll").click(function (event) {
+var hashTagActive = '';
+$('.scroll').click(function (event) {
     if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
         event.preventDefault();
         //calculate destination place
@@ -19,4 +19,14 @@ $(".scroll").click(function (event) {
 
         hashTagActive = this.hash;
     }
+});
+
+$("#nav li").mouseover(function (evt) {
+    //console.log(this);
+    this.childNodes[0].childNodes[0].className = '';
+});
+
+$("#nav li").mouseout(function (evt) {
+    //console.log(this.childNodes[0].childNodes[0])
+    this.childNodes[0].childNodes[0].className = 'label';
 });
