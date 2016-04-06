@@ -540,6 +540,10 @@ header h6 + p {
 	display: none;
 }
 
+.icon > .label: {
+	display: inline;
+}
+
 /* List */
 
 ol {

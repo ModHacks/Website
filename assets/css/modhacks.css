@@ -20,6 +20,10 @@
     display: block;
 }
 
+#nav li:last-child {
+    padding-right: 1em;
+}
+
 #splash {
     width: 100vw;
     height: 100vh;
