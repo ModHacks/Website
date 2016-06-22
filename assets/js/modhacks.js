@@ -1,36 +1,37 @@
-// fullpage handles this
-//var hashTagActive = '';
-//$('.scroll').click(function (event) {
-//    if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
-//        event.preventDefault();
-//        //calculate destination place
-//        var dest = 0;
-//        if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-//            dest = $(document).height() - $(window).height();
-//        } else {
-//            dest = $(this.hash).offset().top;
-//        }
-//        //go to destination
-//        //$('html,body').animate({
-//        //    scrollTop: dest
-//        //}, 800, 'easein');
-//        $('html,body').animate({
-//            scrollTop: dest
-//        }, 950, 'easeOutExpo');
-//
-//        hashTagActive = this.hash;
-//    }
-//});
-
 var nav_li = $('#nav li');
 nav_li.mouseover(function (evt) {
-    //console.log(this);
     this.childNodes[0].childNodes[0].className = '';
 });
 
 nav_li.mouseout(function (evt) {
-    //console.log(this.childNodes[0].childNodes[0])
     this.childNodes[0].childNodes[0].className = 'label';
 });
 
 // progress bar
+
+var anchor_tags = ['splash', 'about', 'faq', 'sponsor'];
+function update_progress_bar(index, nextIndex, direction) {
+    console.log('index: ' + index + ' nextI: ' + nextIndex + ' dir: ' + direction);
+
+    // set progress bar by nextIndex
+    for(var i = 0; i < anchor_tags.length; i++) {
+        if ($.inArray('progress', nav_li[i].childNodes[0].childNodes[1].classList) > -1) {
+            nav_li[i].childNodes[0].childNodes[1].classList.remove('progress')
+        }
+    }
+
+    for(var i = 0; i < nextIndex; i++) {
+        nav_li[i].childNodes[0].childNodes[1].classList.add('progress')
+    }
+}
+
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors:anchor_tags,
+        onLeave: update_progress_bar,
+        afterLoad: function(anchorLink, index){
+            console.log('afterload index: ' + index )
+            nav_li[index - 1].childNodes[0].childNodes[1].classList.add('progress')
+        }
+    });
+});

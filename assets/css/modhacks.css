@@ -4,6 +4,10 @@
     width: 30vw;
 }
 
+.progress {
+    color: pink;
+}
+
 #faq_id {
     width: 80vw;
 }
@@ -39,8 +43,8 @@
     color: rgba(255, 255, 255, 0.5);
     opacity: 0.5;
     position: absolute;
-    right: 3em;
-    top: 6em;
+    right: 5em;
+    top: 5em;
 }
 
 #socialmedia li {
@@ -61,5 +65,6 @@
 }
 
 #fullpage {
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }

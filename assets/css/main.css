@@ -540,7 +540,7 @@ header h6 + p {
 	display: none;
 }
 
-.icon > .label: {
+.icon > .label:active {
 	display: inline;
 }
 
