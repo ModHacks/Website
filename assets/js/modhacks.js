@@ -32,3 +32,5 @@ nav_li.mouseout(function (evt) {
     //console.log(this.childNodes[0].childNodes[0])
     this.childNodes[0].childNodes[0].className = 'label';
 });
+
+// progress bar

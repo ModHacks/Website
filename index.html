@@ -35,7 +35,7 @@
     <body>
 
         <div id="fullpage">
-            <div class="section" id="splash">
+            <div class="section" id="splash_id">
                 <!--Social Media-->
                 <div id="socialmedia">
                     <ul class="icons">
@@ -80,7 +80,7 @@
                     inspired by custom hardware and 3-D printing solutions.
                 </p>
             </div>
-            <div class="section" id="faq">
+            <div class="section" id="faq_id">
                 <h2>frequently asked questions</h2>
                 <div class="column">
                     <strong>Who can attend?</strong>
@@ -114,7 +114,7 @@
                     </p>
                 </div>
             </div>
-            <div class="section" id="sponsor">
+            <div class="section" id="sponsor_id">
                 <h1>sponsor us</h1>
                 <p>
                     Become part of the experience and connect with the top hackers and makers at the
@@ -133,9 +133,9 @@
 		<div id="nav">
 			<ul style="text-align: right" class="icons">
 				<li><a href="#splash" class="scroll icon"><span class="label">ModHacks </span><span class="icon fa-circle"></span></a></li>
-				<li><a href="#whoweare" class="scroll icon"><span class="label">Who We Are </span><span class="icon fa-circle"></span></a></li>
+				<li><a href="#about" class="scroll icon"><span class="label">About </span><span class="icon fa-circle"></span></a></li>
 				<li><a href="#faq" class="scroll icon"><span class="label">FAQ </span><span class="icon fa-circle"></span></a></li>
-				<li><a href="#sponsor" class="scroll icon"><span class="label">Sponsor Us </span><span class="icon fa-circle"></span></a></li>
+				<li><a href="#sponsor" class="scroll icon"><span class="label">Sponsor </span><span class="icon fa-circle"></span></a></li>
 			</ul>
 		</div>
 
@@ -167,7 +167,9 @@
         </script>
         <script>
             $(document).ready(function() {
-                $('#fullpage').fullpage();
+                $('#fullpage').fullpage({
+                    anchors:['splash', 'about', 'faq', 'sponsor']
+                });
             });
         </script>
 	</body>
