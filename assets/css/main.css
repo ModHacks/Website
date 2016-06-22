@@ -542,6 +542,7 @@ header h6 + p {
 
 .icon > .label:active {
 	display: inline;
+	color: white !important;
 }
 
 /* List */
