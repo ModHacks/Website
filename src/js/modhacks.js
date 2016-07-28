@@ -32,8 +32,7 @@ $(document).ready(function() {
         onLeave: update_progress_bar,
         afterLoad: function(anchorLink, index) {
             console.log('afterload index: ' + index )
-            console.log(nav_li[index - 1])
-            nav_li[index - 1].childNodes[0].childNodes[1].classList.add('progress')
+            //nav_li[index - 1].childNodes[0].childNodes[1].classList.add('progress')
         }
     });
 });
