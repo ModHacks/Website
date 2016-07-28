@@ -1,4 +1,5 @@
 var nav_li = $('#nav li');
+
 nav_li.mouseover(function (evt) {
     this.childNodes[0].childNodes[0].className = '';
 });
@@ -27,10 +28,11 @@ function update_progress_bar(index, nextIndex, direction) {
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors:anchor_tags,
+        anchors: anchor_tags,
         onLeave: update_progress_bar,
-        afterLoad: function(anchorLink, index){
+        afterLoad: function(anchorLink, index) {
             console.log('afterload index: ' + index )
+            console.log(nav_li[index - 1])
             nav_li[index - 1].childNodes[0].childNodes[1].classList.add('progress')
         }
     });

@@ -1,0 +1,111 @@
+.column {
+    float: left;
+    margin: 0 1em;
+    width: 30vw;
+}
+
+.progress {
+    border-bottom: solid;
+}
+
+#faq_id {
+    width: 80vw;
+}
+
+#nav {
+    font-size: 14pt;
+    font-weight: bold;
+    position: fixed;
+    top: 1em;
+    width: 500px;
+    left: calc(50% - 250px);
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul {
+    text-align: center;
+}
+
+#nav li {
+    padding-top: 0.5em;
+    display: inline-block;
+}
+
+#splash_id {
+    width: 100vw;
+}
+
+#whoweare {
+    width: 40vw;
+}
+
+#socialmedia {
+    font-size: 14pt;
+    font-weight: bold;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    right: 2em;
+    top: 1em;
+}
+
+#socialmedia li {
+    padding-top: 0.5em;
+    display: inline-block;
+}
+
+.highlight {
+    color: #ffffff;
+}
+
+#links li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#sponsor_id {
+    width: 45vw;
+}
+
+#fullpage {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#header-logo {
+    font-size: 14pt;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    top: 1em;
+    left: 1.5em;
+}
+
+#header-logo img {
+    width: 47px;
+    vertical-align: middle;
+    margin-right: 0.25em;
+}
+
+#target {
+    margin-bottom: 0.15em;
+    letter-spacing: 3px;
+    font-size: 34pt;
+    line-height: 1.5em;
+}
+
+#location {
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 11pt;
+}
+
+#home {
+
+}
