@@ -77,7 +77,7 @@ body {
   -ms-justify-content: center;
   -ms-flex-pack: center;
       justify-content: center;
-  background-color: #3498db;
+  background-color: #56A2FF;
   padding: 6em 4em 4em 4em; }
 
 body > * {
@@ -811,6 +811,9 @@ button:disabled,
     margin: 1em 0 0 0;
     position: relative; } }
 
+.background {
+  background-repeat: no-repeat; }
+
 .column {
   float: left;
   margin: 0 1em;
@@ -819,8 +822,17 @@ button:disabled,
 .progress {
   border-bottom: solid; }
 
+#contact_id {
+  background-image: url(/images/general/contact-blocks.png);
+  background-position: 85% 80%;
+  background-size: 30%;
+  width: 100vw; }
+
 #faq_id {
-  width: 80vw; }
+  background-image: url(/images/general/faq-blocks.png);
+  background-position: 85% 80%;
+  background-size: 30%;
+  width: 100vw; }
 
 #nav {
   font-size: 14pt;
@@ -840,9 +852,16 @@ button:disabled,
   display: inline-block; }
 
 #splash_id {
+  background-image: url(/images/general/about-blocks.png);
   width: 100vw; }
 
 #whoweare {
+  background-image: url(/images/general/about-blocks.png);
+  background-position: 85% 80%;
+  background-size: 25%;
+  width: 100vw; }
+
+#whoweare * {
   width: 40vw; }
 
 #socialmedia {
@@ -866,6 +885,12 @@ button:disabled,
   margin-right: 1em; }
 
 #sponsor_id {
+  background-image: url(/images/general/sponsorship-blocks.png);
+  background-position: 75% 80%;
+  background-size: 50%;
+  width: 100vw; }
+
+#sponsor_id * {
   width: 45vw; }
 
 #fullpage {

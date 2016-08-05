@@ -10,7 +10,7 @@ nav_li.mouseout(function (evt) {
 
 // progress bar
 
-var anchor_tags = ['splash', 'about', 'faq', 'sponsor'];
+var anchor_tags = ['splash', 'about', 'schedule', 'sponsors', 'faq', 'contact'];
 function update_progress_bar(index, nextIndex, direction) {
     console.log('index: ' + index + ' nextI: ' + nextIndex + ' dir: ' + direction);
 

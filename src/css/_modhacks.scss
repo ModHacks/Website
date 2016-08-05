@@ -1,3 +1,7 @@
+.background {
+    background-repeat: no-repeat;
+}
+
 .column {
     float: left;
     margin: 0 1em;
@@ -8,8 +12,18 @@
     border-bottom: solid;
 }
 
+#contact_id {
+    background-image: url(/images/general/contact-blocks.png);
+    background-position: 85% 80%;
+    background-size: 30%;
+    width: 100vw;
+}
+
 #faq_id {
-    width: 80vw;
+    background-image: url(/images/general/faq-blocks.png);
+    background-position: 85% 80%;
+    background-size: 30%;
+    width: 100vw;
 }
 
 #nav {
@@ -33,10 +47,18 @@
 }
 
 #splash_id {
+    background-image: url(/images/general/about-blocks.png);
     width: 100vw;
 }
 
 #whoweare {
+    background-image: url(/images/general/about-blocks.png);
+    background-position: 85% 80%;
+    background-size: 25%;
+    width: 100vw;
+}
+
+#whoweare * {
     width: 40vw;
 }
 
@@ -68,6 +90,13 @@
 }
 
 #sponsor_id {
+    background-image: url(/images/general/sponsorship-blocks.png);
+    background-position: 75% 80%;
+    background-size: 50%;
+    width: 100vw;
+}
+
+#sponsor_id * {
     width: 45vw;
 }
 
