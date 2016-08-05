@@ -2,10 +2,18 @@
 modhacks.co
 
 # Getting Started
-Run 
+
+## Run 
 ```
 npm install
 gulp
+```
+
+## Contributing
+The main entry points to contribute to are:
+```
+/src/js/modhacks.js
+/src/css/_modhacks.scss
 ```
 
 # Credits
