@@ -12,6 +12,10 @@
     border-bottom: solid;
 }
 
+#contact_content {
+    width: 45vw;
+}
+
 #contact_id {
     background-image: url(/images/general/contact-blocks.png);
     background-position: 85% 80%;
@@ -27,7 +31,7 @@
 }
 
 #nav {
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: bold;
     position: fixed;
     top: 1em;
@@ -137,4 +141,42 @@
 
 #home {
 
+}
+
+.person {
+    float: left;
+    margin-right: 4vw;
+}
+
+.person img {
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    width: 10vw
+}
+
+#team {
+
+}
+
+#schedule_table h2 {
+    color: #56A2FF;
+    -webkit-text-stroke: 1px #f7fbff;
+    letter-spacing: 2px;
+    //text-shadow:
+    //        -1px -1px 0 white,
+    //        1px -1px 0 white,
+    //        -1px 1px 0 white,
+    //        2px 2px 0 white;
+}
+
+#schedule_id table {
+    margin-bottom: 2vh;
+}
+
+table td {
+    padding-right: 1vw;
 }

@@ -226,23 +226,23 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.25em;
   line-height: 1.25em; }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1.5em; }
 
 h3 {
-  font-size: 1.35em;
+  font-size: 1.15em;
   line-height: 1.5em; }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1.05em;
   line-height: 1.5em; }
 
 h5 {
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.5em; }
 
 h6 {
@@ -822,6 +822,9 @@ button:disabled,
 .progress {
   border-bottom: solid; }
 
+#contact_content {
+  width: 45vw; }
+
 #contact_id {
   background-image: url(/images/general/contact-blocks.png);
   background-position: 85% 80%;
@@ -835,7 +838,7 @@ button:disabled,
   width: 100vw; }
 
 #nav {
-  font-size: 14pt;
+  font-size: 12pt;
   font-weight: bold;
   position: fixed;
   top: 1em;
@@ -922,6 +925,28 @@ button:disabled,
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 11pt; }
+
+.person {
+  float: left;
+  margin-right: 4vw; }
+
+.person img {
+  border-radius: 100%;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  width: 10vw; }
+
+#schedule_table h2 {
+  color: #56A2FF;
+  -webkit-text-stroke: 1px #f7fbff;
+  letter-spacing: 2px; }
+
+#schedule_id table {
+  margin-bottom: 2vh; }
+
+table td {
+  padding-right: 1vw; }
 
 .fp-enabled body, html.fp-enabled {
   margin: 0;
