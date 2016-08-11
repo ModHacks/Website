@@ -1,11 +1,18 @@
+$blue: #56A2FF;
+
 .background {
     background-repeat: no-repeat;
 }
 
 .column {
     float: left;
-    margin: 0 1em;
     width: 30vw;
+    &:nth-child(odd) {
+        margin-left: 1.0em; 
+    }
+    &:nth-child(even) {
+        margin-right: 1.0em; 
+    }
 }
 
 .progress {
@@ -28,6 +35,15 @@
     background-position: 85% 80%;
     background-size: 30%;
     width: 100vw;
+    .row {
+        width: 60vw;
+        .faq-col-left {
+            padding-right: 15px;
+        }
+        .faq-col-right {
+            padding-left: 15px;
+        }
+    }
 }
 
 #nav {
@@ -55,16 +71,55 @@
     width: 100vw;
 }
 
-#whoweare {
+#about_id {
     background-image: url(/images/general/about-blocks.png);
     background-position: 85% 80%;
     background-size: 25%;
     width: 100vw;
+    p {
+        max-width: 45vw;
+    }
 }
 
-#whoweare * {
-    width: 40vw;
+#schedule_id {
+    background-image: url(/images/general/schedule-blocks.png);
+    background-position: 85% 80%;
+    background-size: 25%;
+    width: 100vw;
+    .schedule-column {
+        display: inline-block;
+        vertical-align: top;
+        &:nth-child(odd) {
+            margin-right: 0.5em; 
+        }
+        &:nth-child(even) {
+            margin-left: 0.5em; 
+        }
+    }
+    .schedule-section-icon {
+        width: 40px;
+        height: 40px;
+        img {
+            width: 100%;
+        }
+    }
+    .schedule-section-title {
+        color: $blue;
+        //text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        -webkit-text-fill-color: $blue;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+    .schedule-section-text {
+        font-size: 1.250em;
+    }
 }
+
+// #whoweare * {
+//     width: 40vw;
+// }
 
 #socialmedia {
     font-size: 14pt;
@@ -98,10 +153,10 @@
     background-position: 75% 80%;
     background-size: 50%;
     width: 100vw;
-}
 
-#sponsor_id * {
-    width: 45vw;
+    p {
+        max-width: 45vw;
+    }
 }
 
 #fullpage {
@@ -129,7 +184,7 @@
 #target {
     margin-bottom: 0.15em;
     letter-spacing: 3px;
-    font-size: 34pt;
+    font-size: 3.50em;
     line-height: 1.5em;
 }
 
@@ -179,4 +234,12 @@
 
 table td {
     padding-right: 1vw;
+}
+
+.section {
+    .section-title {
+        max-width: 52.5vw;
+        font-size: 2em;
+        padding-bottom: 0.67em;
+    }
 }
