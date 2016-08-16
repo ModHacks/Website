@@ -1,5 +1,11 @@
 $blue: #56A2FF;
 
+@mixin breakpoint($point) {
+    @media only screen and (min-width: $point) {
+        @content;
+    }
+}
+
 .background {
     background-repeat: no-repeat;
 }
@@ -62,13 +68,26 @@ $blue: #56A2FF;
 }
 
 #nav li {
-    padding-top: 0.5em;
+    padding-top: 0.75em;
     display: inline-block;
 }
 
 #splash_id {
     background-image: url(/images/general/about-blocks.png);
+    background-position: 85% 80%;
+    background-size: 25%;
     width: 100vw;
+    #location {
+        letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 1.5em;
+        font-size: 0.925em;
+    }
+    h2 {
+        margin-bottom: 2.0em;
+    }
+    @media (min-width: 780px) { h2 { font-size: 2em;} }
+    @media (min-width: 1024px) { h2{font-size: 2.125em; line-height: 1.25em;} }
 }
 
 #about_id {
@@ -188,12 +207,6 @@ $blue: #56A2FF;
     line-height: 1.5em;
 }
 
-#location {
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 11pt;
-}
-
 #home {
 
 }
@@ -201,20 +214,23 @@ $blue: #56A2FF;
 .person {
     float: left;
     margin-right: 4vw;
+    p {
+        text-align: center;
+    }
 }
 
 .person img {
     -webkit-border-radius:100%;
     -moz-border-radius:100%;
     border-radius:100%;
-    border-width: 2px;
+    border-width: 3px;
     border-color: white;
     border-style:solid;
     width: 10vw
 }
 
 #team {
-
+    margin-top: 40px;
 }
 
 #schedule_table h2 {
@@ -242,4 +258,10 @@ table td {
         font-size: 2em;
         padding-bottom: 0.67em;
     }
+}
+
+
+
+.fp-tableCell {
+    padding-top: 20px;
 }
