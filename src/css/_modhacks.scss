@@ -30,14 +30,14 @@ $blue: #56A2FF;
 }
 
 #contact_id {
-    background-image: url(/images/general/contact-blocks.png);
-    background-position: 85% 80%;
-    background-size: 30%;
+    background-image: url(/images/backgrounds/contact-grid.png);
+    //background-position: 85% 80%;
+    background-size: 100%;
     width: 100vw;
 }
 
 #faq_id {
-    background-image: url(/images/general/faq-blocks.png);
+    background-image: url(/images/backgrounds/faq-grid.png);
     background-position: 85% 80%;
     background-size: 30%;
     width: 100vw;
@@ -73,9 +73,9 @@ $blue: #56A2FF;
 }
 
 #splash_id {
-    background-image: url(/images/general/about-blocks.png);
-    background-position: 85% 80%;
-    background-size: 25%;
+    background-image: url(/images/backgrounds/title-grid.png);
+    background-position: 75% 75%;
+    background-size: 75%;
     width: 100vw;
     #location {
         letter-spacing: 1px;
@@ -91,7 +91,7 @@ $blue: #56A2FF;
 }
 
 #about_id {
-    background-image: url(/images/general/about-blocks.png);
+    background-image: url(/images/backgrounds/about-grid.png);
     background-position: 85% 80%;
     background-size: 25%;
     width: 100vw;
@@ -101,7 +101,7 @@ $blue: #56A2FF;
 }
 
 #schedule_id {
-    background-image: url(/images/general/schedule-blocks.png);
+    background-image: url(/images/backgrounds/schedule-grid.png);
     background-position: 85% 80%;
     background-size: 25%;
     width: 100vw;
@@ -168,9 +168,9 @@ $blue: #56A2FF;
 }
 
 #sponsor_id {
-    background-image: url(/images/general/sponsorship-blocks.png);
-    background-position: 75% 80%;
-    background-size: 50%;
+    background-image: url(/images/backgrounds/sponsorship-grid.png);
+    //background-position: 75% 80%;
+    background-size: 100%;
     width: 100vw;
 
     p {
@@ -215,7 +215,14 @@ $blue: #56A2FF;
     float: left;
     margin-right: 4vw;
     p {
+        margin: 0 0 1.5em 0;
         text-align: center;
+    }
+    .person-name {
+        font-weight: 700;
+        margin: 0.75em 0 0.25em 0;
+        letter-spacing: 0.5px;
+        line-height: 1em;
     }
 }
 
